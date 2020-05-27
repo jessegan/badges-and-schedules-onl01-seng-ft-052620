@@ -28,6 +28,6 @@ def printer(attendees)
   
   badges.zip(rooms).each do |badge,room|
     puts badge
-    puts rooms 
+    puts room
   end 
 end
