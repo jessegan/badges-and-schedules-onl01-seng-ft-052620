@@ -22,4 +22,12 @@ def printer(attendees)
   # assign_rooms(attendees).each do |assignment|
   #   puts assignment
   # end 
+  
+  badges = batch_badge_creator(attendees)
+  rooms = assign_rooms(attendees)
+  
+  badges.zip(rooms).each do |badge,room|
+    puts badge
+    puts rooms 
+  end 
 end
